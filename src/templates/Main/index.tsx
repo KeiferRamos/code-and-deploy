@@ -47,7 +47,9 @@ const PrevArrow = (props: any) => {
 };
 
 function Main() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
 
   useEffect(() => {
     function getScreenWidth() {
