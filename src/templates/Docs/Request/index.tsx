@@ -17,7 +17,7 @@ function Request() {
           <Content
             hasNote={true}
             data={response[0]}
-            url={`${process.env.REACT_APP_BASE_URL}/movies`}
+            url={`${process.env.GATSBY_BASE_URL}/movies`}
             method="GET"
             note="Note: The list was too long, therefore I only showed 5 movies."
           >
@@ -31,7 +31,7 @@ function Request() {
           <Content
             hasNote={false}
             data={response[1]}
-            url={`${process.env.REACT_APP_BASE_URL}/movies/id_here`}
+            url={`${process.env.GATSBY_BASE_URL}/movies/id_here`}
             method="GET"
           >
             <header>
@@ -45,7 +45,7 @@ function Request() {
           <Content
             hasNote={true}
             data={response[2]}
-            url={`${process.env.REACT_APP_BASE_URL}/genres`}
+            url={`${process.env.GATSBY_BASE_URL}/genres`}
             method="GET"
             note="Note: The list was too long, therefore I only showed 5 genres."
           >
@@ -59,7 +59,7 @@ function Request() {
           <Content
             hasNote={false}
             data={response[3]}
-            url={`${process.env.REACT_APP_BASE_URL}/genres/id_here`}
+            url={`${process.env.GATSBY_BASE_URL}/genres/id_here`}
             method="GET"
           >
             <header>
@@ -74,7 +74,7 @@ function Request() {
             body={requestBody[0]}
             hasNote={false}
             data={response[4]}
-            url={`${process.env.REACT_APP_BASE_URL}/cinephile/sign-up`}
+            url={`${process.env.GATSBY_BASE_URL}/cinephile/sign-up`}
             method="POST"
           >
             <header>
@@ -89,7 +89,7 @@ function Request() {
             body={requestBody[1]}
             hasNote={false}
             data={response[5]}
-            url={`${process.env.REACT_APP_BASE_URL}/cinephile/sign-in`}
+            url={`${process.env.GATSBY_BASE_URL}/cinephile/sign-in`}
             method="POST"
           >
             <header>
@@ -107,7 +107,7 @@ function Request() {
             note="Note: Access token contains user details and it will automatically add that the request."
             hasNote={true}
             data={response[6]}
-            url={`${process.env.REACT_APP_BASE_URL}/movies/reviews/id_here`}
+            url={`${process.env.GATSBY_BASE_URL}/movies/reviews/id_here`}
             method="POST"
           >
             <header>
@@ -123,7 +123,7 @@ function Request() {
             hasNote={true}
             note="Note: If user id is already included in likes property of the movie, query will remove the id from the likes property. And if not it will add the user id to the property."
             data={{ likes: ["user_id"] }}
-            url={`${process.env.REACT_APP_BASE_URL}/movies/likes/id_here`}
+            url={`${process.env.GATSBY_BASE_URL}/movies/likes/id_here`}
             method="PUT"
           >
             <header>
@@ -141,7 +141,7 @@ function Request() {
           <Content
             hasNote={false}
             data={response[7]}
-            url={`${process.env.REACT_APP_BASE_URL}/cinephile/bookmark/id_here`}
+            url={`${process.env.GATSBY_BASE_URL}/cinephile/bookmark/id_here`}
             method="POST"
           >
             <header>
@@ -160,7 +160,7 @@ function Request() {
             data={{
               bookmark: [],
             }}
-            url={`${process.env.REACT_APP_BASE_URL}/cinephile/bookmark/id_here`}
+            url={`${process.env.GATSBY_BASE_URL}/cinephile/bookmark/id_here`}
             method="DELETE"
           >
             <header>
@@ -179,7 +179,7 @@ function Request() {
             data={{
               reviews: [],
             }}
-            url={`${process.env.REACT_APP_BASE_URL}/movies/reviews/id_here`}
+            url={`${process.env.GATSBY_BASE_URL}/movies/reviews/id_here`}
             method="DELETE"
           >
             <header>
@@ -196,7 +196,7 @@ function Request() {
             body={requestBody[3]}
             note="Note: Make sure that the :id is the id of an existing review. And also the response is the updated value of reviews of the movie where you edited yours."
             data={response[8]}
-            url={`${process.env.REACT_APP_BASE_URL}/movies/reviews/id_here`}
+            url={`${process.env.GATSBY_BASE_URL}/movies/reviews/id_here`}
             method="PUT"
           >
             <header>

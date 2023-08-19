@@ -19,7 +19,7 @@ function Parameters() {
           data={response[0]}
           hasNote={true}
           note=" Note: If you want to sort the list by rank number, you use rank.rankNumber."
-          url={`${process.env.REACT_APP_BASE_URL}/movies?sort=year`}
+          url={`${process.env.GATSBY_BASE_URL}/movies?sort=year`}
           method="GET"
         >
           <header>
@@ -36,7 +36,7 @@ function Parameters() {
         <Content
           data={response[1]}
           hasNote={false}
-          url={`${process.env.REACT_APP_BASE_URL}/movies?limit=3&skip=3`}
+          url={`${process.env.GATSBY_BASE_URL}/movies?limit=3&skip=3`}
           method="GET"
         >
           <header>
@@ -54,7 +54,7 @@ function Parameters() {
         <Content
           data={response[2]}
           hasNote={false}
-          url={`${process.env.REACT_APP_BASE_URL}/movies?genres=food&year=2016`}
+          url={`${process.env.GATSBY_BASE_URL}/movies?genres=food&year=2016`}
           method="GET"
         >
           <header>
@@ -70,7 +70,7 @@ function Parameters() {
           note="Note: values for featured params is either 1 or 0 only. Wherein 1
             indicates that the parameter is true and 0 indicates that it is
             false."
-          url={`${process.env.REACT_APP_BASE_URL}/movies?featured=1`}
+          url={`${process.env.GATSBY_BASE_URL}/movies?featured=1`}
           method="GET"
           data={response[3]}
         >
@@ -86,7 +86,7 @@ function Parameters() {
         <Content
           data={response[4]}
           hasNote={false}
-          url={`${process.env.REACT_APP_BASE_URL}/movies?rank=1`}
+          url={`${process.env.GATSBY_BASE_URL}/movies?rank=1`}
           method="GET"
         >
           <header>
@@ -100,7 +100,7 @@ function Parameters() {
         <Content
           data={response[5]}
           hasNote={true}
-          url={`${process.env.REACT_APP_BASE_URL}/movies?includes[year]=1&includes[plot]=1`}
+          url={`${process.env.GATSBY_BASE_URL}/movies?includes[year]=1&includes[plot]=1`}
           method="GET"
           note="Note: Again! The list is too long so I only showed 3 movies."
         >

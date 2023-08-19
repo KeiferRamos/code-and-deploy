@@ -2,7 +2,7 @@ export const SampleRequest = `
 export const filterMovies = async () => {
   const options = {
     method: "POST",
-    url: "${process.env.REACT_APP_BASE_URL}/movies",
+    url: "${process.env.GATSBY_BASE_URL}/movies",
     params: {
       featured: true,
     },
