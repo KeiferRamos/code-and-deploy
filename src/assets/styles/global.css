@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Preahvihear";
+  src: url("../fonts/pr.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/RobotoMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: bold;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../fonts/Inconsolata-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("../fonts/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Regular.ttf");
+}
+
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  background: #f6fafb;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
