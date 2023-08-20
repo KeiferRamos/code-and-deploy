@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 
@@ -73,7 +73,7 @@ function DocsLayout({ children }: { children: React.ReactNode }) {
               <FolderOpenOutlined />
               <p>Documentation</p>
             </div>
-            <Link to="/docs/introduction" activeClassName="active">
+            <Link to="/docs" activeClassName="active">
               <CodeOutlined />
               <p>Intro</p>
             </Link>

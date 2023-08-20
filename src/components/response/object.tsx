@@ -162,7 +162,7 @@ function DataObject({ item, type }: any) {
     >
       {Object.keys(item)
         .filter((el) => el !== "index")
-        .map((keyString) => {
+        .map((keyString, i) => {
           if (typeof item[keyString] === "string") {
             return (
               <StringObject type={type} keyString={keyString} item={item} />

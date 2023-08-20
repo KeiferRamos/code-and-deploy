@@ -11,7 +11,7 @@ import {
   AppstoreOutlined,
   CodeOutlined,
 } from "@ant-design/icons";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../logo";
 
 type LinkType = {
@@ -22,11 +22,18 @@ type LinkType = {
 };
 
 export const links: LinkType[] = [
-  { path: "/docs/introduction", label: "Docs", id: 3, icon: <FileOutlined /> },
+  { path: "/docs", label: "Docs", id: 3, icon: <FileOutlined /> },
 ];
 
 function NavBar() {
   const [hide, setHide] = useState(true);
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    if (window.location.pathname.includes("docs")) {
+      setActive(true);
+    }
+  }, []);
 
   return (
     <StyledNav>
@@ -42,13 +49,13 @@ function NavBar() {
             <li key={id}>
               <div>
                 <span>{icon}</span>
-                <Link to={path} activeClassName="active">
+                <Link to={path} className={active ? "active" : ""}>
                   {label}
                 </Link>
               </div>
               {label === "Docs" ? (
                 <StyledLinks>
-                  <Link to="/docs/introduction" activeClassName="active">
+                  <Link to="/docs" activeClassName="active">
                     <CodeOutlined />
                     <p>Intro</p>
                   </Link>
