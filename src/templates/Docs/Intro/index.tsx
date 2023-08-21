@@ -15,7 +15,6 @@ import FilmIcon from "../../../assets/images/icons/film-reel.webp";
 import UserIcon from "../../../assets/images/icons/user.webp";
 import GenresIcon from "../../../assets/images/icons/comedy.webp";
 import BlogsIcon from "../../../assets/images/icons/blogs.webp";
-import BgIcon from "../../../assets/images/bg3.webp";
 
 import DocsLayout from "../../../layout/docs";
 import Logo from "../../../components/logo";
@@ -111,7 +110,7 @@ function Introduction() {
           </div>
         </StyledDiv>
         <div className="links">
-          <Link to="/docs/how-to-request" style={{ background: "#e94d61" }}>
+          <Link to="/docs/request" style={{ background: "#e94d61" }}>
             <div>
               <h2>Ready To Dive In?</h2>
               <p>Start Your journey now</p>

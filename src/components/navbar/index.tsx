@@ -25,7 +25,7 @@ export const links: LinkType[] = [
   { path: "/docs", label: "Docs", id: 3, icon: <FileOutlined /> },
 ];
 
-function NavBar() {
+function NavBar({ handleClick }) {
   const [hide, setHide] = useState(true);
   const [active, setActive] = useState(false);
 
@@ -79,6 +79,7 @@ function NavBar() {
               ) : null}
             </li>
           ))}
+          <button onClick={handleClick}>Message Me</button>
         </ul>
       </StyledSide>
     </StyledNav>

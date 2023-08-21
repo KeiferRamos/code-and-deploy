@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 import styled from "styled-components";
+import ContactMe from "../components/contact";
 
 const StyledLayout = styled.div`
   .main-content {
@@ -18,11 +19,16 @@ const StyledLayout = styled.div`
 `;
 
 function Layout({ children }: { children: React.ReactNode }) {
+  const [close, setClose] = useState(true);
+
+  const handleClick = () => setClose(!close);
+
   return (
     <StyledLayout>
-      <NavBar />
+      <NavBar handleClick={handleClick} />
       <div className="main-content">{children}</div>
       <Footer />
+      <ContactMe close={close} handleClick={handleClick} />
     </StyledLayout>
   );
 }

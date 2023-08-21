@@ -60,7 +60,15 @@ export const StyledSide = styled.div`
 
   ul {
     display: flex;
-    gap: 2em;
+    align-items: center;
+    gap: 1em;
+
+    button {
+      background: #258ce7;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+    }
 
     li {
       a {
