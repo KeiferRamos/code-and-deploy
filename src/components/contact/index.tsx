@@ -5,8 +5,7 @@ import CloseIcon from "../../assets/images/icons/close-button.webp";
 
 import { useForm } from "@formspree/react";
 import { StyledContent } from "./styled";
-import { Formik } from "formik";
-import { Form, SubmitButton } from "formik-antd";
+import { Formik, Form } from "formik";
 import { Input, Row } from "antd";
 
 function ContactMe({ close, handleClick }) {
@@ -26,37 +25,28 @@ function ContactMe({ close, handleClick }) {
         reply as soon as possible. Thank you.
       </p>
       <br />
-      <Formik
-        initialValues={{ email: "", fullname: "", message: "" }}
-        onSubmit={handleSubmit}
-      >
-        {({ dirty, isValid }) => {
-          return (
-            <Form>
-              <Row>
-                <Input
-                  name="email"
-                  placeholder="email here"
-                  style={{ padding: "20px 10px", marginBottom: "15px" }}
-                />
-              </Row>
-              <Row>
-                <Input.TextArea
-                  maxLength={100}
-                  name="message"
-                  placeholder="message here..."
-                  autoSize={{
-                    minRows: 6,
-                    maxRows: 6,
-                  }}
-                ></Input.TextArea>
-              </Row>
-              <br />
-              <SubmitButton disabled={dirty || !isValid}>submit</SubmitButton>
-            </Form>
-          );
-        }}
-      </Formik>
+      <form>
+        <Row>
+          <Input
+            name="email"
+            placeholder="email here"
+            style={{ padding: "20px 10px", marginBottom: "15px" }}
+          />
+        </Row>
+        <Row>
+          <Input.TextArea
+            maxLength={100}
+            name="message"
+            placeholder="message here..."
+            autoSize={{
+              minRows: 6,
+              maxRows: 6,
+            }}
+          ></Input.TextArea>
+        </Row>
+        <br />
+        <button>submit</button>
+      </form>
     </StyledContent>
   );
 }

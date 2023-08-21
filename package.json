@@ -19,7 +19,6 @@
     "antd": "^5.8.4",
     "babel-plugin-styled-components": "^2.1.4",
     "formik": "^2.4.3",
-    "formik-antd": "^2.0.4",
     "gatsby": "^5.11.0",
     "gatsby-plugin-styled-components": "^6.11.0",
     "react": "^18.2.0",
