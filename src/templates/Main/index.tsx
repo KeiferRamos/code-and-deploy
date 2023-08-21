@@ -21,9 +21,9 @@ import {
   StyledHeading,
 } from "./styled";
 
-import Banner from "../../assets/images/banner.png";
-import Bg2 from "../../assets/images/bg2.png";
-import Bg from "../../assets/images/bg.png";
+import Banner from "../../assets/images/banner.webp";
+import Bg2 from "../../assets/images/bg2.webp";
+import Bg from "../../assets/images/bg.webp";
 
 import Accounts from "../../components/accounts";
 import { StyledCodeEditor } from "../Docs/Axios/styled";

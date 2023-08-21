@@ -9,13 +9,13 @@ import {
 } from "@ant-design/icons";
 import { Link } from "gatsby";
 
-import ApiIcon from "../../../assets/images/icons/api.png";
-import RocketIcon from "../../../assets/images/icons/rocket.png";
-import FilmIcon from "../../../assets/images/icons/film-reel.png";
-import UserIcon from "../../../assets/images/icons/user.png";
-import GenresIcon from "../../../assets/images/icons/comedy.png";
-import BlogsIcon from "../../../assets/images/icons/blogs.png";
-import BgIcon from "../../../assets/images/bg3.png";
+import ApiIcon from "../../../assets/images/icons/api.webp";
+import RocketIcon from "../../../assets/images/icons/rocket.webp";
+import FilmIcon from "../../../assets/images/icons/film-reel.webp";
+import UserIcon from "../../../assets/images/icons/user.webp";
+import GenresIcon from "../../../assets/images/icons/comedy.webp";
+import BlogsIcon from "../../../assets/images/icons/blogs.webp";
+import BgIcon from "../../../assets/images/bg3.webp";
 
 import DocsLayout from "../../../layout/docs";
 import Logo from "../../../components/logo";

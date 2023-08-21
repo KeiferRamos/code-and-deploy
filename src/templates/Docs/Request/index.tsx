@@ -71,6 +71,33 @@ function Request() {
             </header>
           </Content>
           <Content
+            hasNote={false}
+            data={response[9]}
+            url={`${process.env.GATSBY_BASE_URL}/blogs`}
+            method="GET"
+          >
+            <header>
+              <h2>All Blogs.</h2>
+              <p>
+                You can get all blogs by using the <kbd>/blogs</kbd> endpoint.
+              </p>
+            </header>
+          </Content>
+          <Content
+            hasNote={false}
+            data={response[10]}
+            url={`${process.env.GATSBY_BASE_URL}/blogs/id_here`}
+            method="GET"
+          >
+            <header>
+              <h2>Single Blog.</h2>
+              <p>
+                You can get all blogs by using the <kbd>/blogs/:id</kbd>&nbsp;
+                endpoint. Wherein <kbd>id</kbd> is the id of the blog
+              </p>
+            </header>
+          </Content>
+          <Content
             body={requestBody[0]}
             hasNote={false}
             data={response[4]}

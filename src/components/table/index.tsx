@@ -41,7 +41,8 @@ const StyledTable = styled(Table)`
         &-review-array,
         &-cast-array,
         &-similar-array,
-        &-bookmark-array {
+        &-bookmark-array,
+        &-content-array {
           color: #129ce6;
         }
 

@@ -7,9 +7,9 @@ import DocsLayout from "../../../layout/docs";
 
 import { StyledCodeEditor, StyledContent, StyledInstaller } from "./styled";
 
-import NpmIcon from "../../../assets/images/icons/npm.png";
-import YarnIcon from "../../../assets/images/icons/yarn.png";
-import PnpmIcon from "../../../assets/images/icons/pnpm.png";
+import NpmIcon from "../../../assets/images/icons/npm.webp";
+import YarnIcon from "../../../assets/images/icons/yarn.webp";
+import PnpmIcon from "../../../assets/images/icons/pnpm.webp";
 import {
   RequestType,
   SampleCode,

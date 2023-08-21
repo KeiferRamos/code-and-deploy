@@ -176,7 +176,9 @@ function DataObject({ item, type }: any) {
           }
           if (Array.isArray(item[keyString])) {
             if (
-              ["reviews", "cast", "similar", "bookmark"].includes(keyString)
+              ["reviews", "cast", "similar", "bookmark", "contents"].includes(
+                keyString
+              )
             ) {
               return <ObjectArray item={item[keyString]} itemkey={keyString} />;
             } else {
