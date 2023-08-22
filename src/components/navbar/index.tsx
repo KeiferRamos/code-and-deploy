@@ -3,8 +3,6 @@ import { Link } from "gatsby";
 import {
   MenuOutlined,
   FileOutlined,
-  ExperimentOutlined,
-  MessageOutlined,
   BranchesOutlined,
   ProfileOutlined,
   ApartmentOutlined,
@@ -23,6 +21,7 @@ type LinkType = {
 
 export const links: LinkType[] = [
   { path: "/docs", label: "Docs", id: 3, icon: <FileOutlined /> },
+  { path: "/apps", label: "Apps", id: 3, icon: <AppstoreOutlined /> },
 ];
 
 function NavBar({ handleClick }) {
@@ -49,7 +48,11 @@ function NavBar({ handleClick }) {
             <li key={id}>
               <div>
                 <span>{icon}</span>
-                <Link to={path} className={active ? "active" : ""}>
+                <Link
+                  to={path}
+                  activeClassName="active"
+                  className={active && label === "Docs" ? "active" : ""}
+                >
                   {label}
                 </Link>
               </div>

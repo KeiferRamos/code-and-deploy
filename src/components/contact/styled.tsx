@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const StyledContent = styled.div`
   position: fixed;
-  width: 400px;
-  height: 100svh;
+  width: 360px;
+  height: 100vh;
   top: 0;
   transition: all 0.7s;
   background-color: #fff;

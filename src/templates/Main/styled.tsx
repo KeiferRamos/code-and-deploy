@@ -1,10 +1,11 @@
-import { Carousel } from 'antd';
-import styled from 'styled-components';
+import { Carousel } from "antd";
+import styled from "styled-components";
 
 export const HerroBanner = styled.div`
   display: flex;
   align-items: center;
   height: 90vh;
+  gap: 1em;
 
   header {
     margin-right: auto;
@@ -38,6 +39,18 @@ export const HerroBanner = styled.div`
   }
 
   @media (max-width: 1200px) {
+    img {
+      height: 50%;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    img {
+      height: 40%;
+    }
+  }
+
+  @media (max-width: 850px) {
     flex-direction: column-reverse;
     justify-content: center;
     gap: 10px;
@@ -212,7 +225,7 @@ export const StyledHeading = styled.div`
     display: inline-block;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 3px;

@@ -12,6 +12,7 @@ const SchemaPageTemplate = path.resolve(
 const RequestPageTemplate = path.resolve(
   "./src/templates/Docs/Request/index.tsx"
 );
+const AppsPageTemplate = path.resolve("./src/templates/Apps/index.tsx");
 
 exports.createPages = ({ actions }) => {
   const { createPage } = actions;
@@ -19,6 +20,11 @@ exports.createPages = ({ actions }) => {
   createPage({
     path: "/",
     component: MainPageTemplate,
+  });
+
+  createPage({
+    path: "/apps",
+    component: AppsPageTemplate,
   });
 
   createPage({

@@ -16,7 +16,7 @@ function ContactMe({ close, handleClick }) {
   }
 
   return (
-    <StyledContent style={{ right: close ? "-100%" : 0 }}>
+    <StyledContent style={{ right: close ? "-400px" : 0 }}>
       <img className="close-btn" src={CloseIcon} alt="" onClick={handleClick} />
       <img className="banner-image" src={ContactIcon} alt="" />
       <h2>Contact Me</h2>

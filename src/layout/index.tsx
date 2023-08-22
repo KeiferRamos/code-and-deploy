@@ -8,6 +8,10 @@ const StyledLayout = styled.div`
   .main-content {
     padding: 0 10em;
 
+    @media (max-width: 1200px) {
+      padding: 10px 5em;
+    }
+
     @media (max-width: 950px) {
       padding: 10px 2em;
     }
